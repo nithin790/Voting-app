@@ -1,1 +1,0 @@
-console.log("Aakash's digital voting application")
