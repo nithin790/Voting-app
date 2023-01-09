@@ -1,20 +1,20 @@
 {
   "development": {
-    "username": "nithin",
+    "username": "postgres",
     "password": "nithin123",
-    "database": "elect_dev",
+    "database": "Voting_Dev",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "nithin",
+    "username": "postgres",
     "password": "nithin123",
-    "database": "db_test",
+    "database": "Voting_Test",
     "host": "127.0.0.1",
-    "dialect": "preet.202104123@tulas.edu.in"
+    "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL2",
-    "dialect": "preet.202104123@tulas.edu.in"
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres"
   }
 }
