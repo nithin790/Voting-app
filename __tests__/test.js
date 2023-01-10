@@ -452,7 +452,7 @@ describe("Online voting application", function () {
     let res = await agent.get("/elections/create");
     let csrfToken = extractCsrfToken(res);
     await agent.post("/elections").send({
-      electionName: "Who is nani",
+      electionName: "",
       _csrf: csrfToken,
     });
     const groupedElectionsResponse = await agent
@@ -499,8 +499,8 @@ describe("Online voting application", function () {
     res = await agent
       .post(`/elections/${latestElection.id}/voters/create`)
       .send({
-        voterid: "ashish",
-        password: "011618",
+        voterid: "",
+        password: "",
         _csrf: csrfToken,
       });
 
